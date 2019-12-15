@@ -1,0 +1,29 @@
+@import '../../call-force';
+
+.select-format {
+  margin-left: 5rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .font {
+    height: 2.5rem;
+    margin-right: 0.3rem;
+    padding: 0.1rem;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 2.5rem;
+    border-radius: 3px;
+
+    img {
+      margin: 0.2rem;
+      cursor: pointer;
+    }
+  }
+
+  .active {
+    background: #6bc1ff;
+  }
+}

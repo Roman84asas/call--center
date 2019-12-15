@@ -1,0 +1,52 @@
+@import '../../call-force';
+
+.option-checkbox {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .checkbox {
+    display: flex;
+    align-items: center;
+    margin-right: 1.8rem;
+
+    .check:not(checked){
+       position:absolute;
+       opacity:0;
+    }
+
+    .check + label{
+      font-size: 1rem;
+      cursor:pointer;
+      display: flex;
+      align-items: center;
+    }
+
+    .check:not(checked) + label{
+      position:relative;
+    }
+
+    .check:not(checked) + label:before {
+      content: "";
+      display: inline-block;
+      width: 1rem;
+      height: 1rem;
+      background: white;
+      border: 1px solid #c3c9d8;
+      text-align: center;
+      margin-right: 10px;
+    }
+
+    .check:checked + label:before{
+      content: url("../../assets/img/chek.svg");
+      background: #88bffd;
+      border: 1px solid #7599ff;
+      text-align: center;
+      margin-right: 10px;
+    }
+
+  };
+
+}

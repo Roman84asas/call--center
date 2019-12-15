@@ -1,0 +1,518 @@
+@import '../../call-force';
+
+.total-information {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom: 1px solid $colorSeparator;
+  background: rgba(255, 255, 255, 0.7);
+  padding-top: 10px;
+  padding-bottom: 5px;
+  display: flex;
+  text-align: center;
+  color: $colorWrite;
+  max-height: 2rem;
+  font-size: 0.8rem;
+
+  .all-name {
+    width: 24.5rem;
+    padding-top: 0.2rem;
+    text-align: center;
+    border-right: 1px solid $colorSeparator;
+    overflow: inherit;
+    padding-left: 0.2rem;
+  }
+
+  .duration {
+    width: 5.3rem;
+    padding-top: 0.3rem;
+    text-align: center;
+    border-right: 1px solid $colorSeparator;
+  }
+  .received {
+    width: 3.3rem;
+    padding-top: 0.3rem;
+    text-align: center;
+    border-right: 1px solid $colorSeparator;
+  }
+  .missed {
+    width: 3.5rem;
+    padding-top: 0.3rem;
+    text-align: center;
+    border-right: 1px solid $colorSeparator;
+  }
+  .outdoing {
+    width: 3.6rem;
+    padding-top: 0.3rem;
+    text-align: center;
+    border-right: 1px solid $colorSeparator;
+  }
+
+  .status {
+    width: 18rem;
+    padding-top: 0.3rem;
+    text-align: center;
+  }
+}
+
+//all style from table
+
+.top-section-light-table {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 0.1rem;
+  display: flex;
+  text-align: center;
+  color: $darkWrite;
+  min-height: 2rem;
+  overflow: inherit;
+
+  .light-name {
+    height: auto;
+    width: 25rem;
+    text-align: left;
+    border-right: 1px solid $colorSeparator;
+    padding-left: 0.2rem;
+    display: flex;
+
+    div {
+      margin: auto 0;
+    }
+  }
+
+  .light-duration {
+    width: 5.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-right: 1px solid $colorSeparator;
+
+    .duration-orange {
+      height: 100%;
+      width: 85%;
+      background: $colorOrange;
+      display: flex;
+      margin: 0 5px;
+      align-items: center;  
+      
+      div {
+        margin: auto;
+      }
+    }
+
+    .duration-green {
+      height: 100%;
+      width: 85%;
+      background: $colorGreen;
+      display: flex;
+      margin: 0 5px;
+      align-items: center;
+
+      div {
+        margin: auto;
+      }
+    }
+
+    .duration-red {
+      height: 100%;
+      width: 85%;
+      position: relative;
+      background: $colorRed;
+      display: flex;
+      margin: 0 5px;
+      align-items: center;
+
+      div {
+        margin: auto;
+      }
+    }
+  }
+  .received-numb {
+    width: 3rem;
+    border-right: 1px solid $colorSeparator;
+    display: flex;
+    margin: 0 5px;
+    align-items: center;
+
+    div {
+      margin: auto;
+    }
+  }
+  .missed-numb {
+    width: 3rem;
+    border-right: 1px solid $colorSeparator;
+    display: flex;
+    margin: 0 5px;
+    align-items: center;
+
+    div {
+      margin: auto;
+    }
+  }
+  .outdoing-numb {
+    width: 3rem;
+    text-align: center;
+    border-right: 1px solid $colorSeparator;
+    display: flex;
+    margin: 0 5px;
+    align-items: center;
+
+    div {
+      margin: auto;
+    }
+  }
+
+  .numb {
+    width: 18rem;
+
+    .act {
+      height: 80%;
+      width: 98%;
+      text-align: center;
+      display: flex;
+      margin: 4px 0 0 0;
+      align-items: center;
+      div {
+        margin: auto;
+      }
+    }
+
+    .numb-active {
+      height: 80%;
+      width: 98%;
+      color: #e28c15;
+      background: $colorOrange;
+      text-align: center;
+      display: flex;
+      margin: 4px 0 0 0;
+      align-items: center;
+      position: relative;
+
+      .active-icon {
+        background: url("../../assets/img/active.svg") center center no-repeat;
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        margin-left: 1rem;
+      }
+
+      div {
+        margin: auto;
+      }
+    }
+
+    .numb-incoming {
+      height: 80%;
+      width: 98%;
+      color: #429542;
+      background: $colorGreen;
+      text-align: center;
+      display: flex;
+      margin: 4px 0 0 0;
+      align-items: center;
+      position: relative;
+      .incoming-icon {
+        background: url("../../assets/img/incoming.svg") center center no-repeat;
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        margin-left: 1rem;
+      }
+
+      div {
+        margin: auto;
+      }
+    }
+
+    .numb-inactive {
+      height: 80%;
+      width: 98%;
+      color: #F72503;
+      background: $colorRed;
+      text-align: center;
+      display: flex;
+      margin: 4px 0 0 0;
+      align-items: center;
+      position: relative;
+      .inactive-icon {
+        background: url("../../assets/img/inactive.svg") center center no-repeat;
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        margin-left: 1rem;
+      }
+      div {
+        margin: auto;
+      }
+    }
+
+    .numb-outbox {
+      height: 80%;
+      width: 98%;
+      color: #0195c7;
+      background: $colorBlue;
+      text-align: center;
+      padding-top: 1px;
+      display: flex;
+      margin: 4px 0 0 0;
+      align-items: center;
+      position: relative;
+      .outbox-icon {
+        background: url("../../assets/img/outbox.svg") center center no-repeat;
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        margin-left: 1rem;
+      }
+
+      div {
+        margin: auto;
+      }
+    }
+
+    .numb-worcking {
+      height: 80%;
+      width: 98%;
+      position: relative;
+      color: #8056be;
+      background: $colorViolet;
+      text-align: center;
+      padding-top: 1px;
+      display: flex;
+      margin: 4px 0 0 0;
+      align-items: center;
+      .worcking-icon {
+        background: url("../../assets/img/working.svg") center center no-repeat;
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        margin-left: 1rem;
+      }
+      div {
+        margin: auto;
+      }
+    }
+  }
+}
+.top-section-dark-table {
+  background: #e3e9f7;
+  padding: 0.1rem;
+  display: flex;
+  text-align: center;
+  color: $darkWrite;
+  min-height: 2rem;
+  overflow: inherit;
+
+  .dark-name {
+    height: auto;
+    width: 25rem;
+    text-align: left;
+    border-right: 1px solid $colorSeparator;
+    padding-left: 0.2rem;
+    display: flex;
+
+    div {
+      margin: auto 0;
+    }
+  }
+
+  .dark-duration {
+    width: 5.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-right: 1px solid $colorSeparator;
+
+    .duration-orange {
+      height: 100%;
+      width: 85%;
+      background: $colorOrange;
+      display: flex;
+      margin: 0 5px;
+      align-items: center;
+
+      div {
+        margin: auto;
+      }
+    }
+
+    .duration-green {
+      height: 100%;
+      width: 85%;
+      background: $colorGreen;
+      display: flex;
+      margin: 0 5px;
+      align-items: center;
+
+      div {
+        margin: auto;
+      }
+    }
+
+    .duration-red {
+      height: 100%;
+      width: 85%;
+      position: relative;
+      background: $colorRed;
+      display: flex;
+      margin: 0 5px;
+      align-items: center;
+
+      div {
+        margin: auto;
+      }
+    }
+  }
+  .received-numb {
+    width: 3rem;
+    border-right: 1px solid $colorSeparator;
+    display: flex;
+    margin: 0 5px;
+    align-items: center;
+
+    div {
+      margin: auto;
+    }
+  }
+  .missed-numb {
+    width: 3rem;
+    border-right: 1px solid $colorSeparator;
+    display: flex;
+    margin: 0 5px;
+    align-items: center;
+
+    div {
+      margin: auto;
+    }
+  }
+  .outdoing-numb {
+    width: 3rem;
+    text-align: center;
+    border-right: 1px solid $colorSeparator;
+    display: flex;
+    margin: 0 5px;
+    align-items: center;
+
+    div {
+      margin: auto;
+    }
+  }
+
+  .numb {
+    width: 18rem;
+
+    .numb-active {
+      height: 80%;
+      width: 98%;
+      color: #e28c15;
+      background: $colorOrange;
+      text-align: center;
+      display: flex;
+      margin: 4px 0 0 0;
+      align-items: center;
+      position: relative;
+
+      .active-icon {
+        background: url("../../assets/img/active.svg") center center no-repeat;
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        margin-left: 1rem;
+      }
+
+      div {
+        margin: auto;
+      }
+    }
+
+    .numb-incoming {
+      height: 80%;
+      width: 98%;
+      color: #429542;
+      background: $colorGreen;
+      text-align: center;
+      display: flex;
+      margin: 4px 0 0 0;
+      align-items: center;
+      position: relative;
+      .incoming-icon {
+        background: url("../../assets/img/incoming.svg") center center no-repeat;
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        margin-left: 1rem;
+      }
+
+      div {
+        margin: auto;
+      }
+    }
+
+    .numb-inactive {
+      height: 80%;
+      width: 98%;
+      color: #F72503;
+      background: $colorRed;
+      text-align: center;
+      display: flex;
+      margin: 4px 0 0 0;
+      align-items: center;
+      position: relative;
+      .inactive-icon {
+        background: url("../../assets/img/inactive.svg") center center no-repeat;
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        margin-left: 1rem;
+      }
+      div {
+        margin: auto;
+      }
+    }
+
+    .numb-outbox {
+      height: 80%;
+      width: 98%;
+      color: #0195c7;
+      background: $colorBlue;
+      text-align: center;
+      padding-top: 1px;
+      display: flex;
+      margin: 4px 0 0 0;
+      align-items: center;
+      position: relative;
+      .outbox-icon {
+        background: url("../../assets/img/outbox.svg") center center no-repeat;
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        margin-left: 1rem;
+      }
+
+      div {
+        margin: auto;
+      }
+    }
+
+    .numb-worcking {
+      height: 80%;
+      width: 98%;
+      position: relative;
+      color: #8056be;
+      background: $colorViolet;
+      text-align: center;
+      padding-top: 1px;
+      display: flex;
+      margin: 4px 0 0 0;
+      align-items: center;
+      .worcking-icon {
+        background: url("../../assets/img/working.svg") center center no-repeat;
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        margin-left: 1rem;
+      }
+      div {
+        margin: auto;
+      }
+    }
+  }
+}

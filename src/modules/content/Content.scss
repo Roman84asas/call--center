@@ -1,0 +1,10 @@
+@import '../../call-force';
+
+.section {
+  align-self: center;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  justify-content: left;
+}
+

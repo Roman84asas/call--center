@@ -1,0 +1,253 @@
+@import '../../call-force';
+
+.statistic-all {
+  margin-top: 10px;
+
+  .header-all {
+    display: flex;
+    justify-content: left;
+    background: #f8f9fd;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    .statistic-accepted {
+      width: 12.5rem;
+      height: auto;
+      margin: auto;
+      padding: 2rem 0 2rem 0;
+      text-align: center;
+      border-right: 1px solid $colorSeparator;
+    }
+
+    .the-details {
+      width: 25rem;
+
+      .statistic-missed {
+        padding-top: 0.8rem;
+        padding-bottom: 0.7rem;
+        height: auto;
+        border-bottom: 1px solid $colorSeparator;
+      }
+      .false {
+        display: flex;
+
+        .untreated {
+          padding: 0.8rem 2.2rem 0 2.2rem;
+        }
+        .seporator {
+          margin-top: 4px;
+          height: 2.5rem;
+          width: 1px;
+          background: $colorSeparator;
+        }
+        .all-false {
+          padding: 0.8rem 2.2rem 0 2.2rem;
+        }
+      }
+    }
+  }
+
+  .header-rest {
+    color: white;
+
+    .name-rest {
+      background: #7ec9ff;
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem;
+      font-size: 1.3rem;
+    }
+
+    .rest-number {
+      background: #68c0ff;
+      display: flex;
+      text-align: left;
+      font-size: 36px;
+
+      .rest-all {
+        width: 7rem;
+        padding: 0.9rem 0 0.9rem 3.4rem;
+      }
+
+      .rest-first {
+        width: 6.8rem;
+        padding: 0.9rem 0 0.9rem 4.6rem;
+      }
+
+      .rest-second {
+        width: 4.6rem;
+        padding: 0.9rem 0 0.9rem 4.6rem;
+      }
+
+      .seporator {
+        margin-top: 18px;
+        height: 2.5rem;
+        width: 1px;
+        background: white;
+      }
+    }
+  }
+
+  .first-rest {
+    color: $darkWrite;
+
+    .name-rest {
+      background: #f8f9fd;
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem;
+      font-size: 1.3rem;
+      color: $colorWrite;
+    }
+
+    .rest-number {
+      background: #f8f9fd;
+      display: flex;
+      text-align: left;
+      font-size: 36px;
+
+      .rest-all {
+        width: 7rem;
+        padding: 0.9rem 0 0.9rem 3.4rem;
+      }
+
+      .rest-first {
+        width: 6.8rem;
+        padding: 0.9rem 0 0.9rem 4.6rem;
+      }
+
+      .rest-second {
+        width: 4.6rem;
+        padding: 0.9rem 0 0.9rem 4.6rem;
+      }
+
+      .seporator {
+        margin-top: 18px;
+        height: 2.5rem;
+        width: 1px;
+        background: #bdc2d0;
+      }
+    }
+  }
+
+  .second-rest {
+    color: $darkWrite;
+
+    .name-rest {
+      background: #f8f9fd;
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem;
+      font-size: 1.3rem;
+      color: $colorWrite;
+    }
+
+    .rest-number {
+      background: #f8f9fd;
+      display: flex;
+      text-align: left;
+      font-size: 36px;
+
+      .rest-all {
+        width: 7rem;
+        padding: 0.9rem 0 0.9rem 3.4rem;
+      }
+
+      .rest-first {
+        width: 6.8rem;
+        padding: 0.9rem 0 0.9rem 4.6rem;
+      }
+
+      .rest-second {
+        width: 4.6rem;
+        padding: 0.9rem 0 0.9rem 4.6rem;
+      }
+
+      .seporator {
+        margin-top: 18px;
+        height: 2.5rem;
+        width: 1px;
+        background: #bdc2d0;
+      }
+    }
+  }
+
+  .third-rest {
+    color: $darkWrite;
+
+    .name-rest {
+      background: #f8f9fd;
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem;
+      font-size: 1.3rem;
+      color: $colorWrite;
+    }
+
+    .rest-number {
+      background: #f8f9fd;
+      display: flex;
+      text-align: left;
+      font-size: 36px;
+
+      .rest-all {
+        width: 7rem;
+        padding: 0.9rem 0 0.9rem 3.4rem;
+      }
+
+      .rest-first {
+        width: 6.8rem;
+        padding: 0.9rem 0 0.9rem 4.6rem;
+      }
+
+      .rest-second {
+        width: 4.6rem;
+        padding: 0.9rem 0 0.9rem 4.6rem;
+      }
+
+      .seporator {
+        margin-top: 18px;
+        height: 2.5rem;
+        width: 1px;
+        background: #bdc2d0;
+      }
+    }
+  }
+
+  .fourth-rest {
+    color: $darkWrite;
+
+    .name-rest {
+      background: #f8f9fd;
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem;
+      font-size: 1.3rem;
+      color: $colorWrite;
+    }
+
+    .rest-number {
+      background: #f8f9fd;
+      display: flex;
+      text-align: left;
+      font-size: 36px;
+
+      .rest-all {
+        width: 7rem;
+        padding: 0.9rem 0 0.9rem 3.4rem;
+      }
+
+      .rest-first {
+        width: 6.8rem;
+        padding: 0.9rem 0 0.9rem 4.6rem;
+      }
+
+      .rest-second {
+        width: 4.6rem;
+        padding: 0.9rem 0 0.9rem 4.6rem;
+      }
+
+      .seporator {
+        margin-top: 18px;
+        height: 2.5rem;
+        width: 1px;
+        background: #bdc2d0;
+      }
+    }
+  }
+}

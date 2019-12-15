@@ -1,0 +1,41 @@
+@import '../../call-force';
+
+.filter-option {
+  margin-left: 5.5rem;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+
+  img {
+    margin-right: 0.7rem;
+  }
+
+  .form-select {
+    display: flex;
+
+    &__text {
+      position: relative;
+      width: 14rem;
+      height: 2.2rem;
+      border: 1px solid #c3c9d8;
+      border-radius: 4px;
+      padding: 0.08rem 1rem;
+      font-size: 1rem;
+      color: #9aa6b9;
+    };
+
+    &__submit {
+      content: url("../../assets/img/arrow_right.svg");
+      position: absolute;
+      height: 1.8rem;
+      width: 1.8rem;
+      border: none;
+      background: #68c0ff;
+      border-radius: 4px;
+      margin-left: 14rem;
+      margin-top: 0.3rem;
+      cursor: pointer;
+    }
+  }
+
+}

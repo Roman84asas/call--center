@@ -1,0 +1,829 @@
+@import '../../call-force';
+
+.section-dark-background {
+  align-self: center;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  justify-content: left;
+
+  .operators {
+    margin-top: 1rem;
+    width: 45%;
+
+    .operators-top {
+      .total-information {
+        border-bottom: 1px solid $colorDark;
+        color: $colorSeparator;
+        background-color: rgba(255, 255, 255, 0.35);
+
+      }
+
+      .top-section-light-table {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: $colorWrite;
+        .light-duration {
+          color: black;
+
+          .duration-orange {
+            background: $colorActive;
+          }
+
+          .duration-green {
+            background: $colorIncoming;
+          }
+
+          .duration-red {
+            background: $colorInactive;
+          }
+        }
+
+        .numb {
+          .numb-active {
+            color: black;
+            background: $colorActive;
+            .active-icon {
+              background-image: url("../../assets/img/activeDark.svg");
+            }
+          }
+          .numb-incoming {
+            color: black;
+            background: $colorIncoming;
+            .incoming-icon {
+              background-image: url("../../assets/img/incomingDark.svg");
+            }
+          }
+
+          .numb-red {
+            color: black;
+            background: $colorInactive;
+            .inactive-icon {
+              background-image: url("../../assets/img/inactiveDark.svg");
+            }
+          }
+
+          .numb-outbox {
+            color: black;
+            background: $colorOutbox;
+            .outbox-icon {
+              background-image: url("../../assets/img/outboxDark.svg");
+            }
+          }
+
+          .numb-worcking {
+            color: black;
+            background: $colorWorcking;
+            .worcking-icon {
+              background-image: url("../../assets/img/workingDark.svg");
+            }
+          }
+        }
+      }
+
+      .top-section-dark-table {
+        background-color: rgba(255, 255, 255, 0.03);
+        color: $colorWrite;
+
+        .dark-duration {
+          color: black;
+
+          .duration-orange {
+            background: $colorActive;
+          }
+
+          .duration-green {
+            background: $colorIncoming;
+          }
+
+          .duration-red {
+            background: $colorInactive;
+          }
+
+        }
+
+        .numb {
+          .numb-active {
+            color: black;
+            background: $colorActive;
+            .active-icon {
+              background-image: url("../../assets/img/activeDark.svg");
+            }
+          }
+          .numb-incoming {
+            color: black;
+            background: $colorIncoming;
+            .incoming-icon {
+              background-image: url("../../assets/img/incomingDark.svg");
+
+            }
+          }
+
+          .numb-red {
+            color: black;
+            background: $colorInactive;
+            .inactive-icon {
+              background-image: url("../../assets/img/inactiveDark.svg");
+            }
+          }
+
+          .numb-outbox {
+            color: black;
+            background: $colorOutbox;
+            .outbox-icon {
+              background-image: url("../../assets/img/outboxDark.svg");
+            }
+          }
+
+          .numb-worcking {
+            color: black;
+            background: $colorWorcking;
+            .worcking-icon {
+              background-image: url("../../assets/img/workingDark.svg");
+            }
+          }
+        }
+      }
+    }
+
+    .operators-middle {
+
+      .options-middle {
+        background-color: rgba(255, 255, 255, 0.03);
+
+        .top-line {
+          background-color: rgba(255, 255, 255, 0.3);
+          color: white;
+          border: 1px solid rgba(255, 255, 255, 0.001);
+        }
+
+        .activeTop {
+          background-color: #000000;
+          color: #429542;
+          border: 1px solid #429542;
+        }
+
+        .bottom-line {
+          background-color: rgba(255, 255, 255, 0.3);
+          color: white;
+          border: 1px solid rgba(255, 255, 255, 0.001);
+        }
+
+        .activeBottom {
+          background-color: #000000;
+          color: #e28c15;
+          border: 1px solid #e28c15;
+        }
+
+        .option-icon {
+          content: url("../../assets/img/optionsDark.svg");
+          background-color: rgba(255, 255, 255, 0.03);
+          border: 1px solid $colorWrite;
+        }
+      }
+
+      .top-section-light-table {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: $colorWrite;
+        .light-duration {
+          color: black;
+
+          .duration-orange {
+            background: $colorActive;
+          }
+
+          .duration-green {
+            background: $colorIncoming;
+          }
+
+          .duration-red {
+            background: $colorInactive;
+          }
+        }
+
+        .numb {
+          .numb-active {
+            color: black;
+            background: $colorActive;
+            .active-icon {
+              background-image: url("../../assets/img/activeDark.svg");
+            }
+          }
+          .numb-incoming {
+            color: black;
+            background: $colorIncoming;
+            .incoming-icon {
+              background-image: url("../../assets/img/incomingDark.svg");
+            }
+          }
+
+          .numb-red {
+            color: black;
+            background: $colorInactive;
+            .inactive-icon {
+              background-image: url("../../assets/img/inactiveDark.svg");
+            }
+          }
+
+          .numb-outbox {
+            color: black;
+            background: $colorOutbox;
+            .outbox-icon {
+              background-image: url("../../assets/img/outboxDark.svg");
+            }
+          }
+
+          .numb-worcking {
+            color: black;
+            background: $colorWorcking;
+            .worcking-icon {
+              background-image: url("../../assets/img/workingDark.svg");
+            }
+          }
+        }
+      }
+
+      .top-section-dark-table {
+        background-color: rgba(255, 255, 255, 0.03);
+        color: $colorWrite;
+
+        .dark-duration {
+          color: black;
+
+          .duration-orange {
+            background: $colorActive;
+          }
+
+          .duration-green {
+            background: $colorIncoming;
+          }
+
+          .duration-red {
+            background: $colorInactive;
+          }
+
+        }
+
+        .numb {
+          .numb-active {
+            color: black;
+            background: $colorActive;
+            .active-icon {
+              background-image: url("../../assets/img/activeDark.svg");
+            }
+          }
+          .numb-incoming {
+            color: black;
+            background: $colorIncoming;
+            .incoming-icon {
+              background-image: url("../../assets/img/incomingDark.svg");
+
+            }
+          }
+
+          .numb-inactive {
+            color: black;
+            background: $colorInactive;
+            .inactive-icon {
+              background-image: url("../../assets/img/inactiveDark.svg");
+            }
+          }
+
+          .numb-outbox {
+            color: black;
+            background: $colorOutbox;
+            .outbox-icon {
+              background-image: url("../../assets/img/outboxDark.svg");
+            }
+          }
+
+          .numb-worcking {
+            color: black;
+            background: $colorWorcking;
+            .worcking-icon {
+              background-image: url("../../assets/img/workingDark.svg");
+            }
+          }
+        }
+      }
+    }
+
+    .operators-bottom {
+
+      .options-bottom {
+        background-color: rgba(255, 255, 255, 0.2);
+
+        .top-line {
+          background-color: rgba(255, 255, 255, 0.2);
+          color: white;
+          border: 1px solid rgba(255, 255, 255, 0.001);
+        }
+
+        .activeTop {
+          background-color: #000000;
+          color: #8e54ec;
+          border: 1px solid #8e54ec;
+        }
+
+        .bottom-line {
+          background-color: rgba(255, 255, 255, 0.2);
+          color: white;
+          border: 1px solid rgba(255, 255, 255, 0.001);
+        }
+
+        .activeBottom {
+          background-color: #000000;
+          color: #e8566c;
+          border: 1px solid #e8566c;
+        }
+
+        .option-icon {
+          content: url("../../assets/img/optionsDark.svg");
+          background-color: rgba(255, 255, 255, 0.03);
+          border: 1px solid $colorWrite;
+        }
+      }
+
+      .top-section-light-table {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: $colorWrite;
+        .light-duration {
+          color: black;
+
+          .duration-orange {
+            background: $colorActive;
+          }
+
+          .duration-green {
+            background: $colorIncoming;
+          }
+
+          .duration-red {
+            background: $colorInactive;
+          }
+        }
+
+        .numb {
+          .numb-active {
+            color: black;
+            background: $colorActive;
+            .active-icon {
+              background-image: url("../../assets/img/activeDark.svg");
+            }
+          }
+          .numb-incoming {
+            color: black;
+            background: $colorIncoming;
+            .incoming-icon {
+              background-image: url("../../assets/img/incomingDark.svg");
+            }
+          }
+
+          .numb-red {
+            color: black;
+            background: $colorInactive;
+            .inactive-icon {
+              background-image: url("../../assets/img/inactiveDark.svg");
+            }
+          }
+
+          .numb-outbox {
+            color: black;
+            background: $colorOutbox;
+            .outbox-icon {
+              background-image: url("../../assets/img/outboxDark.svg");
+            }
+          }
+
+          .numb-worcking {
+            color: black;
+            background: $colorWorcking;
+            .worcking-icon {
+              background-image: url("../../assets/img/workingDark.svg");
+            }
+          }
+        }
+      }
+
+      .top-section-dark-table {
+        background-color: rgba(255, 255, 255, 0.03);
+        color: $colorWrite;
+
+        .dark-duration {
+          color: black;
+
+          .duration-orange {
+            background: $colorActive;
+          }
+
+          .duration-green {
+            background: $colorIncoming;
+          }
+
+          .duration-red {
+            background: $colorInactive;
+          }
+
+        }
+
+        .numb {
+          .numb-active {
+            color: black;
+            background: $colorActive;
+            .active-icon {
+              background-image: url("../../assets/img/activeDark.svg");
+            }
+          }
+          .numb-incoming {
+            color: black;
+            background: $colorIncoming;
+            .incoming-icon {
+              background-image: url("../../assets/img/incomingDark.svg");
+
+            }
+          }
+
+          .numb-inactive {
+            color: black;
+            background: $colorInactive;
+            .inactive-icon {
+              background-image: url("../../assets/img/inactiveDark.svg");
+            }
+          }
+
+          .numb-outbox {
+            color: black;
+            background: $colorOutbox;
+            .outbox-icon {
+              background-image: url("../../assets/img/outboxDark.svg");
+            }
+          }
+
+          .numb-worcking {
+            color: black;
+            background: $colorWorcking;
+            .worcking-icon {
+              background-image: url("../../assets/img/workingDark.svg");
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  .option-turn {
+    .header-turn {
+      border-bottom: 1px solid $colorDark;
+      color: $colorSeparator;
+      background-color: rgba(255, 255, 255, 0.35);
+
+      .option-icon {
+        content: url("../../assets/img/optionsDark.svg");
+        border: 1px solid $colorSeparator;
+      }
+    }
+
+    .first-turn {
+      background: $colorDark;
+      border: none;
+      border-radius: 5px;
+
+      .talking-number {
+        .button-second {
+          .arrow-second-close {
+            content: url("../../assets/img/drop-down-arrow-lifht.svg");
+            background: #28367b;
+            border: 1px solid $colorDark;
+          }
+        }
+
+      }
+      .descr-turn {
+        margin: 0;
+        padding-right: 1.7rem;
+        position: relative;
+        height: auto;
+        text-align: center;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+
+      .menu-icon {
+        position: absolute;
+        margin-left: -1.3rem;
+      }
+    }
+
+    .second-turn {
+      background: #1a2353;
+      border: none;
+      border-radius: 5px;
+
+      .talking-number {
+        .button-second {
+          .arrow-second-close {
+            content: url("../../assets/img/drop-down-arrow-lifht.svg");
+            background: #28367b;
+            border: 1px solid $colorDark;
+          }
+          .arrow-second-show {
+            content: url("../../assets/img/up-arrow-triangle-light.svg");
+            background: #28367b;
+            border: 1px solid $colorDark;
+          }
+        }
+
+      }
+      .descr-turn {
+        background: #1a2353;
+        color: white;
+        margin: auto;
+        width: 18.5rem;
+        height: auto;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+    }
+
+    .lists {
+      box-shadow: -1px 7px 21px -9px $colorDark;
+
+      .talking-list {
+         box-shadow: -1px 7px 21px -9px $colorDark;
+
+         .header-talking-list {
+           border-bottom: 1px solid $colorDark;
+           background-color: rgba(255, 255, 255, 0.35);
+
+           .duration-talking-list {
+             width: 4.5rem;
+           }
+           .close-icon {
+             content: url("../../assets/img/closeLight.svg");
+             margin-top: 0.8rem;
+             margin-left: 8.0rem;
+           }
+         }
+
+         .talking-list-light {
+           background-color: rgba(255, 255, 255, 0.2);
+
+           .duration-talking-list {
+             width: 4.5rem;
+           }
+         }
+
+         .talking-list-dark {
+           background-color: rgba(255, 255, 255, 0.2);
+
+           .dark {
+             background-color: rgba(18, 24, 57, 0.7);
+
+             .duration-talking-list {
+               width: 4.5rem;
+             }
+           }
+         }
+
+       }
+
+      .number-list {
+        box-shadow: -1px 7px 21px -9px $colorDark;
+
+        .header-number-list {
+          border-bottom: 1px solid $colorDark;
+          border-top: 1px solid $colorDark;
+          background-color: rgba(255, 255, 255, 0.35);
+
+          .duration-number-list {
+            width: 4.5rem;
+          }
+          .close-icon {
+            content: url("../../assets/img/closeLight.svg");
+            margin-top: 0.8rem;
+            margin-left: 8.0rem;
+          }
+        }
+
+        .number-list-light {
+          background-color: rgba(255, 255, 255, 0.2);
+
+          .duration-number-list {
+            width: 4.5rem;
+          }
+        }
+
+        .number-list-dark {
+          background-color: rgba(255, 255, 255, 0.2);
+
+          .dark {
+            background-color: rgba(18, 24, 57, 0.7);
+
+            .duration-number-list {
+              width: 4.5rem;
+            }
+          }
+        }
+
+      }
+
+    }
+
+    .third-turn {
+      background: #1a2353;
+      border: none;
+      border-radius: 5px;
+
+      .talking-number {
+        .button-second {
+          .arrow-second-close {
+            content: url("../../assets/img/drop-down-arrow-lifht.svg");
+            background: #28367b;
+            border: 1px solid $colorDark;
+          }
+        }
+
+      }
+      .descr-turn {
+        background: #1a2353;
+        color: white;
+        margin: auto;
+        width: 18.5rem;
+        height: auto;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+    }
+
+    .fourth-turn {
+      background: #1a2353;
+      border: none;
+      border-radius: 5px;
+
+      .talking-number {
+        .button-second {
+          .arrow-second-close {
+            content: url("../../assets/img/drop-down-arrow-lifht.svg");
+            background: #28367b;
+            border: 1px solid $colorDark;
+          }
+        }
+
+      }
+      .descr-turn {
+        background: #1a2353;
+        color: white;
+        margin: auto;
+        width: 18.5rem;
+        height: auto;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+    }    
+
+    .fifth-turn {
+      background: #1a2353;
+      border: none;
+      border-radius: 5px;
+
+      .talking-number-fifth {
+        .button-second {
+          .arrow-second-close {
+            content: url("../../assets/img/drop-down-arrow-lifht.svg");
+            background: #28367b;
+            border: 1px solid $colorDark;
+          }
+        }
+
+      }
+      .descr-turn {
+        background: #1a2353;
+        color: white;
+        margin: auto;
+        width: 18.5rem;
+        height: auto;        
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+      }      
+    }    
+  }
+
+  .statistic {
+    width: 26%;
+    margin-left: 1.5rem;
+    color: $colorWrite;
+
+    .header-statistic {
+      .stat-detail {
+        .number-detail{
+          background-color: rgba(255, 255, 255, 0.1);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+
+        }
+      }
+    }
+
+    .statistic-all {
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
+
+      .header-all {
+        color: $colorSeparator;
+        background-color: rgba(255, 255, 255, 0.35);
+
+        .statistic-accepted {
+          width: 200px;
+          height: auto;
+          padding-top: 28px;
+          padding-bottom: 30px;
+          text-align: center;
+          border-right: 1px solid $colorSeparator;
+        }
+
+        .the-details {
+          width: 400px;
+
+          .statistic-missed {
+            padding-top: 12px;
+            padding-bottom: 7px;
+            border-bottom: 1px solid $colorSeparator;
+          }
+          .false {
+            display: flex;
+
+            .untreated {
+              padding: 13px 35px 0 35px;
+            }
+            .seporator {
+              margin-top: 4px;
+              height: 2.5rem;
+              width: 1px;
+              background: $colorSeparator;
+            }
+            .all-false {
+              padding: 13px 35px 0 40px;
+            }
+          }
+        }
+      }
+
+      .first-rest {
+        margin-top: 20px;
+        color: $colorSeparator;
+
+        .name-rest {
+          background-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .rest-number {
+          background-color: rgba(255, 255, 255, 0.05);
+        }
+      }
+
+      .second-rest {
+        color: $colorSeparator;
+
+        .name-rest {
+          background-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .rest-number {
+          background-color: rgba(255, 255, 255, 0.05);
+        }
+      }
+
+      .third-rest {
+        color: $colorSeparator;
+
+        .name-rest {
+          background-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .rest-number {
+          background-color: rgba(255, 255, 255, 0.05);
+        }
+      }
+
+      .fourth-rest {
+        color: $colorSeparator;
+
+        .name-rest {
+          background-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .rest-number {
+          background-color: rgba(255, 255, 255, 0.05);
+        }
+      }
+    }
+
+    .statistic-outputs {
+      .rest-number {
+        color: white;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+
+
+}

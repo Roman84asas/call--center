@@ -1,0 +1,36 @@
+@import '../../call-force';
+
+.select-turn {
+  display: flex;
+  text-align: center;
+  justify-content: left;
+  align-items: center;
+
+  .description {
+    color: $darkWrite;
+    margin-left: 5rem;
+    width: 5rem;
+  }
+
+  .result {
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    margin-left: 1.25rem;
+    width: 4.6rem;
+    height: 2.5rem;
+    background: #68c0ff;
+    color: white;
+    border-radius: 4px;
+    position: relative;
+
+    p {
+      padding: 0.58rem 1rem;
+    }
+  }
+  img {
+    position: absolute;
+    margin-left: 2.5rem;
+    margin-top: 0.7rem;
+  }
+}

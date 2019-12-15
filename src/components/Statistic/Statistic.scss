@@ -1,0 +1,47 @@
+@import '../../call-force';
+
+.statistic {
+  width: 26%;
+  margin-left: 2rem;
+  color: $darkWrite;
+  overflow: inherit;
+
+  .header-statistic {
+    display: flex;
+    justify-content: space-between;
+    height: 2.7rem;
+    margin-top: 5px;
+    width: auto;
+
+    .name-stat {
+      max-width: 60%;
+      height: auto;
+      text-align: left;
+      padding-top: 1rem;
+      padding-left: 1rem;
+    }
+
+    .stat-detail {
+      max-width: 40%;
+      left: 0;
+      width: auto;
+      overflow: inherit;
+
+      .descr-detial {
+        margin-bottom: 1px;
+      }
+
+      .number-detail{
+        width: 9rem;
+        border-radius: 5px;
+        padding-top: 3px;
+        text-align: center;
+
+        max-width: 9rem;
+        height: 1.5rem;
+        background: #f1f4f9;
+        border: 1px solid #c3c9d8;
+      }
+    }
+  }
+}

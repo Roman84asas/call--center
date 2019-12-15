@@ -1,0 +1,108 @@
+@import '../../call-force';
+
+.footer-dark-background {
+  margin-top: 25px;
+  flex-shrink: 0;
+  width: 100%;
+  height: 4.37rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: $colorWrite;
+  font-size: 1rem;
+
+  .footer-option {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0.85rem 1.5rem;
+
+    .option-checkbox {
+      width: 45%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .checkbox {
+        display: flex;
+        align-items: center;
+        margin-right: 1.8rem;
+
+        .check:not(checked){
+          position:absolute;
+          opacity:0;
+        }
+
+        .check + label{
+          font-size: 1rem;
+          cursor:pointer;
+          display: flex;
+          align-items: center;
+        }
+
+        .check:not(checked) + label{
+          position:relative;
+        }
+
+        .check:not(checked) + label:before {
+          content: "";
+          display: inline-block;
+          width: 1rem;
+          height: 1rem;
+          background-color: rgba(255, 255, 255, 0.08);
+          border: none;
+          text-align: center;
+          margin-right: 10px;
+        }
+
+        .check:checked + label:before{
+          content: url("../../assets/img/chek.svg");
+          background: #88bffd;
+          text-align: center;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .filter-option {
+      margin-left: 5.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        margin-right: 0.7rem;
+      }
+
+      .form-select {
+        display: flex;
+        &__text {
+          position: relative;
+          width: 14rem;
+          height: 2.2rem;
+          border: none;
+          border-radius: 4px;
+          padding: 0.08rem 1rem;
+          font-size: 1rem;
+          color: #9aa6b9;
+          background-color: rgba(255, 255, 255, 0.08);
+        };
+
+        &__submit {
+          content: url("../../assets/img/arrow_right.svg");
+          position: absolute;
+          height: 1.8rem;
+          width: 1.8rem;
+          border: none;
+          background: #68c0ff;
+          border-radius: 4px;
+          margin-left: 14rem;
+          margin-top: 0.3rem;
+          cursor: pointer;
+        }
+      }
+
+    }
+
+  }
+
+
+}

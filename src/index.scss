@@ -1,0 +1,108 @@
+@import './call-force';
+
+@font-face {
+  font-family: 'Oswald';
+  src: local('Oswald'), url(./assets/fonts/oswald-regular-digits3/oswald-regular-digits.woff2) format('woff2');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  list-style: none;
+  font-family: -apple-system, 'PT Sans', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+.wrapper {
+ width: 97%;
+}
+
+.light {
+  background-color: $colorLight;
+  color: $colorWrite;
+}
+
+.dark {
+ background-color: $colorDark;
+  color: $colorWrite;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  visibility: inherit;
+
+
+
+  //header
+  .header {
+    align-self: center;
+    text-align: center;
+    padding: 0.45rem;
+    border-bottom: 1px solid #c3c9d8;
+    position: relative;
+
+    .time-zone {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+    }
+
+    button {
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding: 0.45rem;
+      border: none;
+      font-size: 0.8rem;
+      background-color: transparent;
+      cursor: pointer;
+      color: $colorWrite;
+    }
+  }
+
+  .header-dark-background {
+    align-self: center;
+    text-align: center;
+    padding: 0.45rem;
+    border-bottom: 1px solid rgba(195, 201, 216, 0.1);
+    position: relative;
+
+    .time-zone {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+    }
+
+    button {
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding: 0.45rem;
+      border: none;
+      font-size: 0.8rem;
+      background-color: transparent;
+      cursor: pointer;
+      color: $colorWrite;
+    }
+  }
+
+
+
+
+
+
+
+}
+
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
